@@ -11,6 +11,11 @@ const gridStyle: React.CSSProperties = {
   textAlign: "center",
 };
 
+  var largura: number | boolean = window.screen.width;
+  if (largura < 400) {
+    largura = false
+  }
+
 export default function Cards() {
   return (
     <div>
@@ -20,8 +25,9 @@ export default function Cards() {
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: 300,
+            width: largura ? '300px' : '200px',
             marginRight: 20,
+            marginBottom: 20
           }}
           cover={<img alt="example" src={ip} />}
         >
@@ -51,8 +57,9 @@ export default function Cards() {
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: 300,
+            width: largura ? '300px' : '200px',
             marginRight: 20,
+            marginBottom: 20
           }}
           cover={<img alt="example" src={url} />}
         >

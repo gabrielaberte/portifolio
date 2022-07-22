@@ -11,11 +11,17 @@ const LayoutProjects: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
   let navigate = useNavigate();
 
+  var largura: number | boolean = window.screen.width;
+  if (largura < 400) {
+    largura = false
+  }
+
   return (
     <Layout>
       <Sider
         collapsed={true}
-        style={{height: '100vh'}}
+        style={{ height: '120vh' }}
+        collapsedWidth={largura ? 80 : 40}
       >
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item
@@ -39,9 +45,9 @@ const LayoutProjects: React.FC = () => {
         </Menu>
       </Sider>
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }} />
+        <Header className="site-layout-background" style={{ padding: 0, color: 'white' }} >Gabriela Berte's Portfolio</Header>
         <Content style={{ margin: "0 16px" }}>
-          <div className="site-layout-background">
+          <div className="site-layout-background" style={{ overflow: 'scroll', height: '90vh'}}>
             <Cards />
           </div>
         </Content>

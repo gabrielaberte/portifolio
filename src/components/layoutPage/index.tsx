@@ -12,11 +12,18 @@ const LayoutPage: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
   let navigate = useNavigate();
 
+  var largura: number | boolean = window.screen.width;
+  if (largura < 400) {
+    largura = false
+  }
+
+
   return (
     <Layout>
       <Sider
         collapsed={true}
-        style={{height: '120vh'}}
+        style={{ height: '100vh' }}
+        collapsedWidth={largura ? 80 : 40} 
       >
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item

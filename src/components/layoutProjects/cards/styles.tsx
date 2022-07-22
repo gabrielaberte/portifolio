@@ -5,7 +5,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100vw;
+    flex-wrap: wrap;
+    font-size: 10px !important;
 
   }
   @media (max-width: 4000px) {
