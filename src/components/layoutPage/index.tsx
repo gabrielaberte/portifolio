@@ -22,7 +22,7 @@ const LayoutPage: React.FC = () => {
     <Layout>
       <Sider
         collapsed={true}
-        style={{ height: '100vh' }}
+        style={{ height: '120vh' }}
         collapsedWidth={largura ? 80 : 40} 
       >
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">

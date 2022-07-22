@@ -6,6 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 300px;
     font-size: 10px !important;
 
   }

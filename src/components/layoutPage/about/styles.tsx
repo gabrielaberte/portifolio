@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const DivAbout = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
 
+    }
+  
   p {
     flex-wrap: wrap;
     width: fit-content;

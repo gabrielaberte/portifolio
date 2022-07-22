@@ -25,7 +25,7 @@ export default function Cards() {
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: largura ? '300px' : '200px',
+            width: largura ? '300px' : 'fit-content',
             marginRight: 20,
             marginBottom: 20
           }}
@@ -57,7 +57,7 @@ export default function Cards() {
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: largura ? '300px' : '200px',
+            width: largura ? '300px' : 'fit-content',
             marginRight: 20,
             marginBottom: 20
           }}
