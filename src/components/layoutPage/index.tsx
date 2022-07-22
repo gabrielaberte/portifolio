@@ -15,8 +15,8 @@ const LayoutPage: React.FC = () => {
   return (
     <Layout>
       <Sider
-        
-        style={{height: '100vh'}}
+        collapsed={true}
+        style={{height: '120vh'}}
       >
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item
@@ -40,9 +40,9 @@ const LayoutPage: React.FC = () => {
         </Menu>
       </Sider>
       <Layout className="site-layout">
-        <Header className="site-layout-background" style={{ padding: 0 }} />
+        <Header className="site-layout-background" style={{ padding: 0, color: 'white' }} >Gabriela Berte's Portfolio</Header>
         <Content style={{ margin: "0 16px" }}>
-          <div className="site-layout-background">
+          <div className="site-layout-background" style={{ overflow: 'scroll', height: '90vh'}}>
             <About />
             <TimeLine />
           </div>

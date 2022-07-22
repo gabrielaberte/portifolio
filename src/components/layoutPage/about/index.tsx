@@ -4,7 +4,8 @@ import { Container } from "./styles";
 import { DivAbout, DivInside } from "./styles";
 import {
   GithubOutlined,
-  MailOutlined
+  MailOutlined,
+  LinkedinOutlined 
 } from '@ant-design/icons';
 
 function About() {
@@ -33,8 +34,13 @@ function About() {
             </p>
             <p>
               <GithubOutlined style={{marginRight: '10px',display: 'flex', justifyContent: 'center', alignItems: 'center'}} />
-              <a href="https://github.com/gabrielaberte" style={{textDecoration: "none", color: 'black'}}> github.com/gabrielaberte</a>
+              <a href="https://github.com/gabrielaberte" style={{textDecoration: "none", color: 'black'}}> GitHub</a>
             </p>
+            <p>
+              <LinkedinOutlined  style={{marginRight: '10px',display: 'flex', justifyContent: 'center', alignItems: 'center'}} />
+              <a href="https://www.linkedin.com/in/gabriela-moro-berté-89655a113/" style={{textDecoration: "none", color: 'black'}}>LinkedIn</a>
+            </p>
+            
           </div>
         </DivInside>
       </DivAbout>

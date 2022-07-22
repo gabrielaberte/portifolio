@@ -7,7 +7,7 @@ const { Meta } = Card;
 
 export default function TimeLine() {
   return (
-    <div>
+    <div >
       <Container>
         <Card style={{backgroundColor: '#D7DADA', color: 'white'}} >
           <Meta title="Experience" />
@@ -40,6 +40,7 @@ export default function TimeLine() {
           />
         </Card>
       </Container>
+
     </div>
   );
 }

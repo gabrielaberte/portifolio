@@ -14,9 +14,7 @@ const LayoutProjects: React.FC = () => {
   return (
     <Layout>
       <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={(value) => setCollapsed(value)}
+        collapsed={true}
         style={{height: '100vh'}}
       >
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
