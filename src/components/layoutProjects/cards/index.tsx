@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ip from "../../../assets/ip-tracker.png";
 import url from "../../../assets/url-shorter.png";
 import searchCountries from "../../../assets/search-countries.png";
+import { useNavigate } from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -12,23 +13,29 @@ const gridStyle: React.CSSProperties = {
   textAlign: "center",
 };
 
-  var largura: number | boolean = window.screen.width;
-  if (largura < 400) {
-    largura = false
-  }
+var largura: number | boolean = window.screen.width;
+if (largura < 400) {
+  largura = false;
+}
 
 export default function Cards() {
+  let navigate = useNavigate();
+
   return (
     <div>
       <Container>
         <Card
           hoverable
+          onClick={() => {
+            window.location.href = "https://contry-gabrielaberte.vercel.app";
+            return null;
+          }}
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: largura ? '300px' : 'fit-content',
+            width: largura ? "300px" : "fit-content",
             marginRight: 20,
-            marginBottom: 20
+            marginBottom: 20,
           }}
           cover={<img alt="example" src={searchCountries} />}
         >
@@ -52,13 +59,18 @@ export default function Cards() {
           />
         </Card>
         <Card
+          onClick={() => {
+            window.location.href =
+              "https://ip-address-traker-gabrielaberte.vercel.app";
+            return null;
+          }}
           hoverable
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: largura ? '300px' : 'fit-content',
+            width: largura ? "300px" : "fit-content",
             marginRight: 20,
-            marginBottom: 20
+            marginBottom: 20,
           }}
           cover={<img alt="example" src={ip} />}
         >
@@ -85,12 +97,17 @@ export default function Cards() {
         </Card>
         <Card
           hoverable
+          onClick={() => {
+            window.location.href =
+              "https://frontend-mentor-url-short.vercel.app";
+            return null;
+          }}
           style={{
             backgroundColor: "#ffffff",
             color: "white",
-            width: largura ? '300px' : 'fit-content',
+            width: largura ? "300px" : "fit-content",
             marginRight: 20,
-            marginBottom: 20
+            marginBottom: 20,
           }}
           cover={<img alt="example" src={url} />}
         >
