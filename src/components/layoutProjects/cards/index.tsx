@@ -3,6 +3,7 @@ import { Card, Avatar, Grid } from "antd";
 import React, { useState } from "react";
 import ip from "../../../assets/ip-tracker.png";
 import url from "../../../assets/url-shorter.png";
+import searchCountries from "../../../assets/search-countries.png";
 
 const { Meta } = Card;
 
@@ -20,6 +21,36 @@ export default function Cards() {
   return (
     <div>
       <Container>
+        <Card
+          hoverable
+          style={{
+            backgroundColor: "#ffffff",
+            color: "white",
+            width: largura ? '300px' : 'fit-content',
+            marginRight: 20,
+            marginBottom: 20
+          }}
+          cover={<img alt="example" src={searchCountries} />}
+        >
+          <Meta
+            title={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://contry-gabrielaberte.vercel.app"
+              >
+                Search for Countries
+              </a>
+            }
+            description={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://contry-gabrielaberte.vercel.app"
+              >
+                Search by Region or by name.
+              </a>
+            }
+          />
+        </Card>
         <Card
           hoverable
           style={{
