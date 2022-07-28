@@ -125,7 +125,7 @@ export default function Cards() {
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://frontend-mentor-url-short.vercel.app"
               >
-                Enter your link and make it shorter.
+                Enter your link and make it shorter. This one is only for desktop.
               </a>
             }
           />
