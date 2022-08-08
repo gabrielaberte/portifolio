@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ip from "../../../assets/ip-tracker.png";
 import url from "../../../assets/url-shorter.png";
 import searchCountries from "../../../assets/search-countries.png";
+import movieChallenge from "../../../assets/movie-challenge.png";
 import { useNavigate } from "react-router-dom";
 
 const { Meta } = Card;
@@ -54,6 +55,40 @@ export default function Cards() {
                 href="https://contry-gabrielaberte.vercel.app"
               >
                 Search by Region or by name.
+              </a>
+            }
+          />
+        </Card>
+        <Card
+          hoverable
+          onClick={() => {
+            window.location.href = "https://movie-challenge-gabrielaberte.vercel.app";
+            return null;
+          }}
+          style={{
+            backgroundColor: "#ffffff",
+            color: "white",
+            width: largura ? "300px" : "fit-content",
+            marginRight: 20,
+            marginBottom: 20,
+          }}
+          cover={<img alt="example" src={movieChallenge} />}
+        >
+          <Meta
+            title={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://movie-challenge-gabrielaberte.vercel.app"
+              >
+                Search for Movies
+              </a>
+            }
+            description={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://movie-challenge-gabrielaberte.vercel.app"
+              >
+                Search for movies and see the details of it.
               </a>
             }
           />
