@@ -5,6 +5,7 @@ import ip from "../../../assets/ip-tracker.png";
 import url from "../../../assets/url-shorter.png";
 import searchCountries from "../../../assets/search-countries.png";
 import movieChallenge from "../../../assets/movie-challenge.png";
+import loterias from "../../../assets/loterias.png";
 import { useNavigate } from "react-router-dom";
 
 const { Meta } = Card;
@@ -25,6 +26,77 @@ export default function Cards() {
   return (
     <div>
       <Container>
+        <Card
+          hoverable
+          onClick={() => {
+            window.location.href =
+              "https://lotery-challengee-gabrielaberte.vercel.app";
+            return null;
+          }}
+          style={{
+            backgroundColor: "#ffffff",
+            color: "white",
+            width: largura ? "300px" : "fit-content",
+            marginRight: 20,
+            marginBottom: 20,
+          }}
+          cover={<img alt="example" src={loterias} />}
+        >
+          <Meta
+            title={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://lotery-challengee-gabrielaberte.vercel.app"
+              >
+                Lotery results.
+              </a>
+            }
+            description={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://lotery-challengee-gabrielaberte.vercel.app"
+              >
+                Search for lotery results.
+                This project will only be avaliable until 23/08/2022 due to the free api token expiration date.
+              </a>
+            }
+          />
+        </Card>
+        <Card
+          hoverable
+          onClick={() => {
+            window.location.href =
+              "https://movie-challenge-gabrielaberte.vercel.app";
+            return null;
+          }}
+          style={{
+            backgroundColor: "#ffffff",
+            color: "white",
+            width: largura ? "300px" : "fit-content",
+            marginRight: 20,
+            marginBottom: 20,
+          }}
+          cover={<img alt="example" src={movieChallenge} />}
+        >
+          <Meta
+            title={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://movie-challenge-gabrielaberte.vercel.app"
+              >
+                Search for Movies
+              </a>
+            }
+            description={
+              <a
+                style={{ textDecoration: "none", color: "black" }}
+                href="https://movie-challenge-gabrielaberte.vercel.app"
+              >
+                Search for movies and see the details of it.
+              </a>
+            }
+          />
+        </Card>
         <Card
           hoverable
           onClick={() => {
@@ -59,40 +131,7 @@ export default function Cards() {
             }
           />
         </Card>
-        <Card
-          hoverable
-          onClick={() => {
-            window.location.href = "https://movie-challenge-gabrielaberte.vercel.app";
-            return null;
-          }}
-          style={{
-            backgroundColor: "#ffffff",
-            color: "white",
-            width: largura ? "300px" : "fit-content",
-            marginRight: 20,
-            marginBottom: 20,
-          }}
-          cover={<img alt="example" src={movieChallenge} />}
-        >
-          <Meta
-            title={
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                href="https://movie-challenge-gabrielaberte.vercel.app"
-              >
-                Search for Movies
-              </a>
-            }
-            description={
-              <a
-                style={{ textDecoration: "none", color: "black" }}
-                href="https://movie-challenge-gabrielaberte.vercel.app"
-              >
-                Search for movies and see the details of it.
-              </a>
-            }
-          />
-        </Card>
+
         <Card
           onClick={() => {
             window.location.href =
@@ -160,7 +199,8 @@ export default function Cards() {
                 style={{ textDecoration: "none", color: "black" }}
                 href="https://frontend-mentor-url-short.vercel.app"
               >
-                Enter your link and make it shorter. This one is only for desktop.
+                Enter your link and make it shorter. This one is only for
+                desktop.
               </a>
             }
           />
